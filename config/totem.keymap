@@ -35,8 +35,23 @@
         compatible = "zmk,combos";
 
         nordicA {
-            bindings = <&nordics>;
-            key-positions = <1 2>;
+            bindings = <&nordic_a>;
+            key-positions = <6 7>;
+        };
+
+        NordicAA {
+            bindings = <&nordic_a>;
+            key-positions = <16 17>;
+        };
+
+        Nordic_of {
+            bindings = <&nordic_a>;
+            key-positions = <27 28>;
+        };
+
+        nordic_A {
+            bindings = <&nordic_A>;
+            key-positions = <7 8>;
         };
     };
 
@@ -56,11 +71,18 @@
                 <&kp G &kp I &kp F>;
         };
 
-        nordics: nordics {
+        nordic_a: nordics {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(U)>;
+            bindings = <&kp LA(U) &kp A>;
             label = "NORDICS";
+        };
+
+        nordic_A: nordic_A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(A)>;
+            label = "NORDIC_A";
         };
     };
 
