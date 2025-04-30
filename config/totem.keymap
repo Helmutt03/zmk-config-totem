@@ -63,7 +63,7 @@
             layers = <0>;
         };
 
-        nordic_O {
+        nordic_OO {
             bindings = <&nordic_O>;
             key-positions = <28 29>;
             layers = <0>;
