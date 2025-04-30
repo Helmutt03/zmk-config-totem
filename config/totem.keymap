@@ -35,8 +35,8 @@
         compatible = "zmk,combos";
 
         nordicA {
-            bindings = <&nordic_a>;
-            key-positions = <6 7>;
+            bindings = <&nordic_A>;
+            key-positions = <17 18>;
         };
 
         NordicAA {
@@ -45,32 +45,37 @@
         };
 
         Nordic_of {
-            bindings = <&nordic_a>;
-            key-positions = <27 28>;
+            bindings = <&nordic_ao>;
+            key-positions = <6 7>;
         };
 
         nordic_A {
-            bindings = <&nordic_A>;
+            bindings = <&nordic_AO>;
             key-positions = <7 8>;
+        };
+
+        nordic_o {
+            bindings = <&nordic_o>;
+            key-positions = <27 28>;
+        };
+
+        nordic_O {
+            bindings = <&nordic_o>;
+            key-positions = <28 29>;
+        };
+
+        cpy {
+            bindings = <&cpy>;
+            key-positions = <22 23>;
+        };
+
+        pst {
+            bindings = <&pst>;
+            key-positions = <23 24>;
         };
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
         nordic_a: nordics {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,6 +88,48 @@
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp LS(A)>;
             label = "NORDIC_A";
+        };
+
+        nordic_o: nordic_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp O>;
+            label = "NORDIC_O";
+        };
+
+        nordic_O: nordic_O {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(O)>;
+            label = "NORDIC_O";
+        };
+
+        nordic_ao: nordic_ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(A)>;
+            label = "NORDIC_AO";
+        };
+
+        nordic_AO: nordic_AO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(A))>;
+            label = "NORDIC_AO";
+        };
+
+        cpy: cpy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "CPY";
+        };
+
+        pst: pst {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+            label = "PST";
         };
     };
 
