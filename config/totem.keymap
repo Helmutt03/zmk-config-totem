@@ -73,6 +73,11 @@
             bindings = <&sweddisho>;
             key-positions = <27 28>;
         };
+
+        sweo {
+            bindings = <&sedo>;
+            key-positions = <29 28>;
+        };
     };
 
     macros {
@@ -105,6 +110,13 @@
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp O>;
             label = "SWEDDISHO";
+        };
+
+        sedo: sedo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(O)>;
+            label = "SEDO";
         };
     };
 
