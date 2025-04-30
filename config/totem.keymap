@@ -64,7 +64,7 @@
         };
 
         nordic_OO {
-            bindings = <&nordic_O>;
+            bindings = <&nordic_Oo>;
             key-positions = <28 29>;
             layers = <0>;
         };
@@ -101,7 +101,7 @@
             bindings = <&kp LA(U) &kp O>;
         };
 
-        nordic_O: nordic_O {
+        nordic_Oo: nordic_O {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp LS(O)>;
