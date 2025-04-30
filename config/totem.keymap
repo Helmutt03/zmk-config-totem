@@ -76,7 +76,7 @@
     };
 
     macros {
-        nordics_a: nordics {
+        nordics_a: nordics_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(U) &kp A>;
