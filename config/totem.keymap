@@ -68,6 +68,11 @@
             key-positions = <23 24>;
             layers = <0>;
         };
+
+        swedo {
+            bindings = <&sweddisho>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
@@ -93,6 +98,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(V)>;
+        };
+
+        sweddisho: sweddisho {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp O>;
+            label = "SWEDDISHO";
         };
     };
 
