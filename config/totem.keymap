@@ -86,6 +86,36 @@
             key-positions = <7 8>;
             layers = <1>;
         };
+
+        nordicsawind {
+            bindings = <&nordicsawin>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
+
+        aoWinds {
+            bindings = <&nordicsaowin>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        AOWind {
+            bindings = <&nordicsAOwind>;
+            key-positions = <17 18>;
+            layers = <1>;
+        };
+
+        OWinds {
+            bindings = <&nordicsOwinds>;
+            key-positions = <28 29>;
+            layers = <1>;
+        };
+
+        owinds {
+            bindings = <&nordicsowind>;
+            key-positions = <27 28>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -132,6 +162,41 @@
             #binding-cells = <0>;
             bindings = <&kp RS(RA(W))>;
             label = "NORDICAWIN";
+        };
+
+        nordicsawin: nordicsawin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(W)>;
+            label = "NORDICSAWIN";
+        };
+
+        nordicsaowin: nordicsaowin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(Q)>;
+            label = "NORDICSAOWIN";
+        };
+
+        nordicsAOwind: nordicsAOwind {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(RA(Q))>;
+            label = "NORDICSAOWIND";
+        };
+
+        nordicsowind: nordicsowind {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(P)>;
+            label = "NORDICSOWIND";
+        };
+
+        nordicsOwinds: nordicsOwinds {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RS(P))>;
+            label = "NORDICSOWINDS";
         };
     };
 
