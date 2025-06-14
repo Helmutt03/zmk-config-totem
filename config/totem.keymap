@@ -90,6 +90,12 @@
         sweddOwindss {
             bindings = <&swedOwindows>;
             key-positions = <28 29>;
+            layers = <1>;
+        };
+
+        sewina {
+            bindings = <&swedawin>;
+            key-positions = <6 7>;
         };
     };
 
@@ -144,6 +150,13 @@
             #binding-cells = <0>;
             bindings = <&kp RA(RS(P))>;
             label = "SWEDOWINDOWS";
+        };
+
+        swedawin: swedawin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(W)>;
+            label = "SWEDAWIN";
         };
     };
 
