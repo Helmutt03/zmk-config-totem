@@ -48,6 +48,7 @@
         swedishao {
             bindings = <&kp LA(A)>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         nordic_Ao {
@@ -71,11 +72,13 @@
         swedo {
             bindings = <&sweddisho>;
             key-positions = <27 28>;
+            layers = <0>;
         };
 
         sweo {
             bindings = <&sedo>;
             key-positions = <29 28>;
+            layers = <0>;
         };
     };
 
@@ -152,10 +155,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        base_mac {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            display-name = "BASE";
+            display-name = "BASEMAC";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -172,7 +175,17 @@
            &kp Q             &kp W             &kp E              &kp R              &kp T         &kp Y      &kp U               &kp I               &kp O              &kp P
            &left_hrm LGUI A  &left_hrm LALT S  &left_hrm LCTRL D  &left_hrm LSHFT F  &kp G         &kp H      &right_hmr RSHFT J  &right_hmr RCTRL K  &right_hmr RALT L  &right_hmr RGUI SEMICOLON
 &kp MINUS  &kp Z             &kp X             &kp C              &kp V              &kp B         &kp N      &kp M               &kp COMMA           &kp DOT            &kp FSLH                   &kp BSLH
-                                               &lt 3 TAB          &lt 2 SPACE        &kp ESCAPE    &kp ENTER  &lt 1 BACKSPACE     &kp DELETE
+                                               &lt 4 TAB          &lt 3 SPACE        &kp ESCAPE    &kp ENTER  &lt 2 BACKSPACE     &kp DELETE
+            >;
+        };
+
+        base_windows {
+            display-name = "BASE";
+            bindings = <
+           &kp Q             &kp W             &kp E              &kp R              &kp T         &kp Y      &kp U               &kp I               &kp O              &kp P
+           &left_hrm LGUI A  &left_hrm LALT S  &left_hrm LCTRL D  &left_hrm LSHFT F  &kp G         &kp H      &right_hmr RSHFT J  &right_hmr RCTRL K  &right_hmr RALT L  &right_hmr RGUI SEMICOLON
+&kp MINUS  &kp Z             &kp X             &kp C              &kp V              &kp B         &kp N      &kp M               &kp COMMA           &kp DOT            &kp FSLH                   &kp BSLH
+                                               &lt 4 TAB          &lt 3 SPACE        &kp ESCAPE    &kp ENTER  &lt 2 BACKSPACE     &kp DELETE
             >;
         };
 
@@ -226,7 +239,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans            &trans        &trans            &trans          &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &trans            &tog 0        &tog 1            &trans          &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans            &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2    &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                         &trans            &trans          &trans    &trans  &trans  &trans
