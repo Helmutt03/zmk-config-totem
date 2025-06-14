@@ -93,26 +93,26 @@
             layers = <1>;
         };
 
-        aoWinds {
-            bindings = <&nordicsaowin>;
+        xvxvxvxvxvxv {
+            bindings = <&nordicsaowincccc>;
             key-positions = <16 17>;
             layers = <1>;
         };
 
-        AOWind {
-            bindings = <&nordicsAOwind>;
+        AOWindddddss {
+            bindings = <&nordicsAOwindxxx>;
             key-positions = <17 18>;
             layers = <1>;
         };
 
-        OWinds {
-            bindings = <&nordicsOwinds>;
+        sfsfsfsffs {
+            bindings = <&nordicsOwindssfsfs>;
             key-positions = <28 29>;
             layers = <1>;
         };
 
         owindssss {
-            bindings = <&nordicsowind>;
+            bindings = <&nordicsowindsfsf>;
             key-positions = <27 28>;
             layers = <1>;
         };
@@ -171,28 +171,28 @@
             label = "NORDICSAWIN";
         };
 
-        nordicsaowin: nordicsaowin {
+        nordicsaowincccc: nordicsaowin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(Q)>;
             label = "NORDICSAOWIN";
         };
 
-        nordicsAOwind: nordicsAOwind {
+        nordicsAOwindxxx: nordicsAOwind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RS(RA(Q))>;
             label = "NORDICSAOWIND";
         };
 
-        nordicsowind: nordicsowind {
+        nordicsowindsfsf: nordicsowind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(P)>;
             label = "NORDICSOWIND";
         };
 
-        nordicsOwinds: nordicsOwinds {
+        nordicsOwindssfsfs: nordicsOwinds {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(RS(P))>;
