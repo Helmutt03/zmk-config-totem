@@ -92,12 +92,6 @@
             key-positions = <6 7>;
             layers = <1>;
         };
-
-        xvxvxvxvxvxv {
-            bindings = <&nordicsaowincccc>;
-            key-positions = <16 17>;
-            layers = <1>;
-        };
     };
 
     macros {
@@ -151,13 +145,6 @@
             #binding-cells = <0>;
             bindings = <&kp RA(W)>;
             label = "NORDICSAWIN";
-        };
-
-        nordicsaowincccc: nordicsaowin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(Q)>;
-            label = "NORDICSAOWIN";
         };
     };
 
