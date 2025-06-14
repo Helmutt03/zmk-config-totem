@@ -86,12 +86,6 @@
             key-positions = <7 8>;
             layers = <1>;
         };
-
-        nordicsawind {
-            bindings = <&nordicsawin>;
-            key-positions = <6 7>;
-            layers = <1>;
-        };
     };
 
     macros {
@@ -138,13 +132,6 @@
             #binding-cells = <0>;
             bindings = <&kp RS(RA(W))>;
             label = "NORDICAWIN";
-        };
-
-        nordicsawin: nordicsawin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(W)>;
-            label = "NORDICSAWIN";
         };
     };
 
