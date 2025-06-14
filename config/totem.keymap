@@ -96,16 +96,37 @@
         sewina {
             bindings = <&swedawin>;
             key-positions = <6 7>;
+            layers = <1>;
         };
 
         sewinod {
             bindings = <&swedowinds>;
             key-positions = <27 28>;
+            layers = <1>;
         };
 
         mordaowi {
             bindings = <&norwinao>;
             key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        sweAOWIjndows {
+            bindings = <&notsweAO>;
+            key-positions = <17 18>;
+            layers = <1>;
+        };
+
+        windcop {
+            bindings = <&copWInd>;
+            key-positions = <22 23>;
+            layers = <1>;
+        };
+
+        dinpst {
+            bindings = <&pstWind>;
+            key-positions = <24 23>;
+            layers = <1>;
         };
     };
 
@@ -181,6 +202,27 @@
             #binding-cells = <0>;
             bindings = <&kp RA(Q)>;
             label = "NORWINAO";
+        };
+
+        notsweAO: notsweAO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RS(Q))>;
+            label = "NOTSWEAO";
+        };
+
+        copWInd: copWInd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPWIND";
+        };
+
+        pstWind: pstWind {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PSTWIND";
         };
     };
 
