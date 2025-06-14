@@ -86,6 +86,11 @@
             key-positions = <7 8>;
             layers = <1>;
         };
+
+        sweddOwindss {
+            bindings = <&swedOwindows>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
@@ -132,6 +137,13 @@
             #binding-cells = <0>;
             bindings = <&kp RS(RA(W))>;
             label = "NORDICAWIN";
+        };
+
+        swedOwindows: swedOwindows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RS(P))>;
+            label = "SWEDOWINDOWS";
         };
     };
 
