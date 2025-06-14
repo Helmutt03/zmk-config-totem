@@ -98,12 +98,6 @@
             key-positions = <16 17>;
             layers = <1>;
         };
-
-        AOWindddddss {
-            bindings = <&nordicsAOwindxxx>;
-            key-positions = <17 18>;
-            layers = <1>;
-        };
     };
 
     macros {
@@ -164,13 +158,6 @@
             #binding-cells = <0>;
             bindings = <&kp RA(Q)>;
             label = "NORDICSAOWIN";
-        };
-
-        nordicsAOwindxxx: nordicsAOwind {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RS(RA(Q))>;
-            label = "NORDICSAOWIND";
         };
     };
 
