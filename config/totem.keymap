@@ -83,7 +83,7 @@
 
         NordicsAWind {
             bindings = <&nordicAWin>;
-            key-positions = <17 18>;
+            key-positions = <7 8>;
             layers = <1>;
         };
     };
@@ -130,7 +130,7 @@
         nordicAWin: nordicAWin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_N1 &kp KP_NUMBER_4 &kp KP_NUMBER_3 &kt LEFT_ALT>;
+            bindings = <&kp RA(LEFT_ALT) &kp N1 &kp N4 &kp N3>;
             label = "NORDICAWIN";
         };
     };
