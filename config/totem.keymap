@@ -298,7 +298,7 @@
        &kp GRAVE                &kp LT                    &kp GT                        &kp MINUS                   &kp PIPE         &kp CARET  &kp LEFT_BRACE                           &kp RIGHT_BRACE                             &kp DOLLAR                      &kp QUESTION
        &left_hrm LEFT_GUI EXCL  &left_hrm RIGHT_ALT STAR  &left_hrm LEFT_CONTROL SLASH  &left_hrm LEFT_SHIFT EQUAL  &kp AMPERSAND    &kp HASH   &right_hmr RIGHT_SHIFT LEFT_PARENTHESIS  &right_hmr RIGHT_CONTROL RIGHT_PARENTHESIS  &right_hmr RIGHT_ALT SEMICOLON  &right_hmr RIGHT_GUI DOUBLE_QUOTES
 &none  &kp TILDE                &kp PLUS                  &kp LEFT_BRACKET              &kp RIGHT_BRACKET           &kp PERCENT      &kp AT     &kp COLON                                &kp COMMA                                   &kp DOT                         &kp APOSTROPHE                      &none
-                                                          &none                         &none                       &none            &none      &none                                    &none
+                                                          &kp TAB                       &kp SPACE                   &kp ESCAPE       &none      &none                                    &none
             >;
         };
 
