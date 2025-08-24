@@ -29,6 +29,8 @@
     require-prior-idle-ms = <150>;
 };
 
+&lt { flavor = "balanced"; };
+
 / {
     combos {
         compatible = "zmk,combos";
