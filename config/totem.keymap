@@ -133,18 +133,6 @@
     };
 
     macros {
-        nordics_a: nordics_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp A>;
-        };
-
-        nordic_A: nordic_A {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(A)>;
-        };
-
         copys: cpy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -155,62 +143,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(V)>;
-        };
-
-        sweddisho: sweddisho {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp O>;
-            label = "SWEDDISHO";
-        };
-
-        sedo: sedo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp LS(O)>;
-            label = "SEDO";
-        };
-
-        nordicAWin: nordicAWin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RS(RA(W))>;
-            label = "NORDICAWIN";
-        };
-
-        swedOwindows: swedOwindows {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(RS(P))>;
-            label = "SWEDOWINDOWS";
-        };
-
-        swedawin: swedawin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(W)>;
-            label = "SWEDAWIN";
-        };
-
-        swedowinds: swedowinds {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(P)>;
-            label = "SWEDOWINDS";
-        };
-
-        norwinao: norwinao {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(Q)>;
-            label = "NORWINAO";
-        };
-
-        notsweAO: notsweAO {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(RS(Q))>;
-            label = "NOTSWEAO";
         };
 
         copWInd: copWInd {
