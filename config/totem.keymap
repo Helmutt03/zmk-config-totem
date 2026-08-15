@@ -35,30 +35,6 @@
     combos {
         compatible = "zmk,combos";
 
-        nordicA {
-            bindings = <&nordic_A>;
-            key-positions = <17 18>;
-            layers = <0>;
-        };
-
-        NordicAA {
-            bindings = <&nordics_a>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        swedishao {
-            bindings = <&kp LA(A)>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        nordic_Ao {
-            bindings = <&kp LA(LS(A))>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
         copyy {
             bindings = <&copys>;
             key-positions = <22 23>;
@@ -69,54 +45,6 @@
             bindings = <&pastes>;
             key-positions = <23 24>;
             layers = <0>;
-        };
-
-        swedo {
-            bindings = <&sweddisho>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        sweo {
-            bindings = <&sedo>;
-            key-positions = <29 28>;
-            layers = <0>;
-        };
-
-        NordicsAWind {
-            bindings = <&nordicAWin>;
-            key-positions = <7 8>;
-            layers = <1>;
-        };
-
-        sweddOwindss {
-            bindings = <&swedOwindows>;
-            key-positions = <28 29>;
-            layers = <1>;
-        };
-
-        sewina {
-            bindings = <&swedawin>;
-            key-positions = <6 7>;
-            layers = <1>;
-        };
-
-        sewinod {
-            bindings = <&swedowinds>;
-            key-positions = <27 28>;
-            layers = <1>;
-        };
-
-        mordaowi {
-            bindings = <&norwinao>;
-            key-positions = <16 17>;
-            layers = <1>;
-        };
-
-        sweAOWIjndows {
-            bindings = <&notsweAO>;
-            key-positions = <17 18>;
-            layers = <1>;
         };
 
         windcop {
